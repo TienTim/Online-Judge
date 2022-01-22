@@ -1,0 +1,88 @@
+Reverse and Add 
+
+The Problem
+The "reverse and add" method is simple: choose a number, reverse its digits and add it to the original. If the sum is not a palindrome (which means, it is not the same number from left to right and right to left), repeat this procedure. 
+For example: 
+195 Initial number 
+591 
+----- 
+786 
+687 
+----- 
+1473 
+3741 
+----- 
+5214 
+4125 
+----- 
+9339 Resulting palindrome 
+
+In this particular case the palindrome 9339 appeared after the 4th addition. This method leads to palindromes in a few step for almost all of the integers. But there are interesting exceptions. 196 is the first number for which no palindrome has been found. It is not proven though, that there is no such a palindrome. 
+
+Task : 
+You must write a program that give the resulting palindrome and the number of iterations (additions) to compute the palindrome. 
+
+You might assume that all tests data on this problem: 
+- will have an answer , 
+- will be computable with less than 1000 iterations (additions), 
+- will yield a palindrome that is not greater than 4,294,967,295. 
+  
+
+The Input
+The first line will have a number N with the number of test cases, the next N lines will have a number P to compute its palindrome. 
+The Output
+For each of the N tests you will have to write a line with the following data : minimum number of iterations (additions) to get to the palindrome and the resulting palindrome itself separated by one space. 
+Sample Input
+3
+195
+265
+750
+
+Sample Output
+4 9339 
+5 45254 
+3 6666 
+
+20
+5780
+11
+23365
+20074
+8735
+4407
+5449
+31991
+29297
+13289
+21372
+11200
+5423
+31902
+11211
+15300
+2442
+3586
+2802
+28100
+
+﻿2 12221↵\r\n
+1 22↵\r\n
+1 79697↵\r\n
+1 67076↵\r\n
+2 45254↵\r\n
+2 26862↵\r\n
+5 595595↵\r\n
+6 13666631↵\r\n
+10 996848699↵\r\n
+2 136631↵\r\n
+1 48684↵\r\n
+1 11411↵\r\n
+1 8668↵\r\n
+4 291192↵\r\n
+1 22422↵\r\n
+1 15651↵\r\n
+1 4884↵\r\n
+4 293392↵\r\n
+1 4884↵\r\n
+1 28282↵\r\n
+

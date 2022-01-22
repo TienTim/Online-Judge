@@ -1,0 +1,11 @@
+12 Ann Liton 200 saving 1987/10/12 23:59:12 true
+1 ann Surely 500 saving 1999/10/23 12:54:23 true
+54 bob Lin 1200 checking 2020/08/26 14:23:57 true 
+34 Mary Queen 6540 saving 2019/05/06 02/05/06 true 
+54 bob Lin 100 checking 2018/08/26 14:23:56 true
+34 Mary Queen 1000 saving 2020/05/06 02/05/06 true 
+10001797 annoy Brian 5000 saving 1999/10/23 12:54:23 true 
+12 Ann Liton 200 saving 1987/10/12 23:59:12 false
+1203 Jonson Lee 20000 checking 1987/10/12 23:59:12 false 
+1203005 Jonson Cong 120000 saving 1987/10/12 23:59:12 true 
+1204 Jonson Liu 20000 saving 1987/10/12 23:59:12 true

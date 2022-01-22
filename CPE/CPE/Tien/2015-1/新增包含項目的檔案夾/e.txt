@@ -1,0 +1,40 @@
+Case 1: 9
+
+Case 2: 8
+
+Case 3: 1491
+
+Case 4: 255
+
+Case 5: 1419
+
+Case 6: 128
+
+Case 7: 765
+
+Case 8: 1584
+
+Case 9: 1792
+
+Case 10: 924
+
+Case 11: 2205
+
+Case 12: 275
+
+Case 13: 1408
+
+Case 14: 1
+
+Case 15: 0
+
+Case 16: 99
+
+Case 17: 0
+
+Case 18: 2500
+
+Case 19: 175
+
+Case 20: 16
+

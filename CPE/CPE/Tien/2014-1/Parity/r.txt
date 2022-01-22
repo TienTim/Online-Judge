@@ -1,0 +1,12 @@
+The parity of 1 is 1 (mod 2).
+The parity of 11 is 2 (mod 2).
+The parity of 100 is 1 (mod 2).
+The parity of 101 is 2 (mod 2).
+The parity of 1010 is 2 (mod 2).
+The parity of 10100 is 2 (mod 2).
+The parity of 10000 is 1 (mod 2).
+The parity of 110 is 2 (mod 2).
+The parity of 101 is 2 (mod 2).
+The parity of 11000011010100000 is 6 (mod 2).
+The parity of 100111000100000 is 5 (mod 2).
+The parity of 1111111111111111111111111111111 is 31 (mod 2).

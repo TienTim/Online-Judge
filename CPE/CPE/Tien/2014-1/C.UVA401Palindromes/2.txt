@@ -1,0 +1,26 @@
+NOTAPALINDROME
+ISAPALINILAPASI
+2A3MEAS
+ATOYOTA
+ABCDEFGHIJK
+8M8HH8M8
+ASDJDSA
+8ZYJLVJLY58
+
+﻿NOTAPALINDROME -- is not a palindrome.↵\r\n
+↵\r\n
+ISAPALINILAPASI -- is a regular palindrome.↵\r\n
+↵\r\n
+2A3MEAS -- is a mirrored string.↵\r\n
+↵\r\n
+ATOYOTA -- is a mirrored palindrome.↵\r\n
+↵\r\n
+ABCDEFGHIJK -- is not a palindrome.↵\r\n
+↵\r\n
+8M8HH8M8 -- is a mirrored palindrome.↵\r\n
+↵\r\n
+ASDJDSA -- is a regular palindrome.↵\r\n
+↵\r\n
+8ZYJLVJLY58 -- is a mirrored string.↵\r\n
+↵\r\n
+
