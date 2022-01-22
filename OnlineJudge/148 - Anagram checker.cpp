@@ -1,74 +1,80 @@
-#include <stdio.h>
-#include <string.h>
+//
+//  147 - Dollars.cpp
+//  OnlineJudge
+//
+//  Created by Tien Do on 2022/1/20.
+//
+
+#include <iostream>
 #include <sstream>
 #include <set>
 using namespace std;
-char dictionary[2001][101], test[101];
-int dIdx = 0, letter[128], len, i, ans[2001];
-set<string> word;
-void dfs(int idx, int i) {
-    if(len == 0) {
-        printf("%s =", test);
-        for(i = 0; i < idx; i++) {
-            printf(" %s", dictionary[ans[i]]);
+
+string dict[2001];
+string phrase;
+int ndict = 0, letter[128], len, ans[2001];
+set<string> words;
+
+void dfs(int ansIdx, int dictIdx) {
+    if (!len) {
+        cout << phrase << " =";
+        for (int i=0; i<ansIdx; i++) {
+            cout << ' ' << dict[ans[i]];
         }
-        puts("");
-        return ;
+        cout << endl;
+        return;
     }
-    int j;
-    for(; i < dIdx; i++) {
-        if(word.find(dictionary[i]) != word.end())
+    for (; dictIdx<ndict; dictIdx++) {
+        string word = dict[dictIdx];
+        if (words.find(word) != words.end())
             continue;
-        int flag = 0;
-        for(j = 0; dictionary[i][j]; j++) {
-            letter[dictionary[i][j]]--;
+        int flag = true;
+        for (int j=0; j<word.length(); j++) {
+            char c = word[j];
+            letter[c]--;
             len--;
-            if(letter[dictionary[i][j]] < 0) {
-                while(j >= 0) {
-                    letter[dictionary[i][j]]++;
+            if (letter[c] < 0) {
+                while (j >= 0) {
+                    letter[c]++;
                     len++;
                     j--;
                 }
-                flag = 1;
+                flag = false;
                 break;
             }
         }
-        if(!flag) {
-            ans[idx] = i;
-            dfs(idx+1, i+1);
-            for(j = 0; dictionary[i][j]; j++) {
-                letter[dictionary[i][j]]++;
+        if (flag) {
+            ans[ansIdx] = dictIdx;
+            dfs(ansIdx+1, dictIdx+1);
+            for (int j=0; j<word.length(); j++) {
+                letter[word[j]]++;
                 len++;
             }
         }
     }
 }
+
 int main() {
-    while(gets(dictionary[dIdx])) {
-        if(dictionary[dIdx][0] == '#')
-            break;
-        dIdx++;
+    while (cin >> dict[ndict] && dict[ndict] != "#") {
+        ndict++;
     }
-    while(gets(test)) {
-        if(!strcmp(test, "#"))
-            break;
-        stringstream sin;
-        sin << test;
-        string in;
-        word.clear();
-        while(sin >> in) {
-            word.insert(in);
-        }
-        memset(letter, 0, sizeof(letter));
+    getline(cin, phrase);
+    while (getline(cin, phrase) && phrase != "#") {
+        stringstream ss(phrase);
+        string word;
         len = 0;
-        for(i = 0; test[i]; i++) {
-            if(test[i] == ' ') {
-                continue;
+        for (int j=0; j<128; j++) {
+            letter[j] = 0;
+        }
+        words.clear();
+        while (ss >> word) {
+            words.insert(word);
+            for (int i=0; i<word.length(); i++) {
+                letter[word[i]]++;
+                len++;
             }
-            letter[test[i]]++;
-            len++;
         }
         dfs(0, 0);
     }
-    return 0;
 }
+
