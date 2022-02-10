@@ -30,16 +30,16 @@
 //        lights.clear();
 //        string t = s.substr(0, s.find("."));
 //        while (true) {
-//            int npos = t.find(";");
-//            string u = t.substr(0, npos);
-//            t = t.substr(npos+1);
+//            int pos = t.find(";");
+//            string u = t.substr(0, pos);
+//            t = t.substr(pos+1);
 //            char key, value;
 //            stringstream ss(u);
 //            ss >> key >> value;
 //            while (ss >> value) {
 //                m[key].push_back(value);
 //            }
-//            if (npos == -1) // last vertex
+//            if (pos == -1) // last vertex
 //                break;
 //        }
 //        stringstream ss(s.substr(s.find(".")+1));
